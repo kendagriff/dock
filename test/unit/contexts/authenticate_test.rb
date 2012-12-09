@@ -28,7 +28,6 @@ class AuthenticateTest < ActiveSupport::TestCase
   end
 
   test "can't authenticate" do
-    # params = { username: 'ugh', password: 'ugh' }
-    # assert 
+    assert !BasicAuthenticate.call(@controller, BasicCredentials.new('ugh', 'ugh'))
   end
 end
