@@ -1,5 +1,6 @@
 gem 'rake'
 gem 'activesupport'
+gem 'actionpack'
 
 group :test do
   gem 'turn'
