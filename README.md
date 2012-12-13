@@ -1,6 +1,6 @@
 # Dock
 
-Provides authentication libraries for Banzai APIs
+Simple set of authentication libraries (HTTP Basic).
 
 ## Install
 
@@ -16,12 +16,4 @@ Set credentials in an initializer or an environment file:
 
 ```
 BasicCrendentials = BasicCredentials.new('username', 'password')
-```
-
-Add the following filter to your controller
-
-```
-class MyController < ApplicationController
-  before_filter :require_basic_authentication
-end
 ```
